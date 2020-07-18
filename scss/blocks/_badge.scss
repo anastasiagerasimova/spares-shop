@@ -1,0 +1,18 @@
+.badge {
+    position: absolute;
+    height: 25px;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translateX(-100%);
+
+    padding: 0 19px;
+    background-image:linear-gradient(to left,#FD8D43 0%, #9710E9 100%);
+
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

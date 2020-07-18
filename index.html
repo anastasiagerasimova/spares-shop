@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spares shop - main</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font/ProximaNova/stylesheet.css">
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.green.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+             <!-- Header top row -->
+            <div class="header__top-row">
+
+                <div class="header__menu">
+                    <ul class="header-menu">
+                        <li class="header-menu__item">
+                            <a class="header-menu__link" href="#">Магазины</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a class="header-menu__link" href="#">Акции</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a class="header-menu__link" href="#">Доставка и оплата</a>
+                        </li>
+                    </ul>
+                </div>
+
+                    <!--Navigation button for mabile-->
+                    <div id="menu-toggle" class="menu-icon">
+                        <div class="menu-icon-line"></div>
+                    </div>
+                    <!--//Navigation button for mobile -->
+                        
+                    <!--Navigation for mobile-->
+                    <div id="mobile-menu" class="mobile-menu">
+                        <div class="mobile-menu__inner">
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--login">Войти</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--login">Регистрация</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--favorites">Избранное</a>
+                                </li>
+                            </ul>
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--shop">Магазины</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--actions">Акции</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link  mobile-menu__link--delivery">Доставка и оплата</a>
+                                </li>
+                            </ul>
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__item">
+                                    <a href="catalog.html" class="mobile-menu__link">Каталог запчастей</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="catalog.html" class="mobile-menu__link">Каталог ТО</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="catalog.html" class="mobile-menu__link">Шины</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="catalog.html" class="mobile-menu__link">Диски</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="catalog.html" class="mobile-menu__link">Аккумуляторы</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="catalog.html" class="mobile-menu__link">Автомасла</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="catalog.html" class="mobile-menu__link">Автолампы</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="catalog.html" class="mobile-menu__link">Аксессуары</a>
+                                </li>
+                            </ul>
+                            <div class="mobile-menu__address">Санкт-Петербург, ул Большая Конюшенная, д 19</div>
+                        </div>
+                    </div>
+                    <!--//Navigation for mobile -->
+
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="./img/logo.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="header__user-nav">
+                    <div class="user-nav">
+                        <a class="user-nav__link user-nav__link--address" href="#">
+                            <span class="user-nav__icon">
+                                <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.6561 17.7113L12.8073 18.24L13.6561 17.7113C13.372 17.2552 12.9164 16.9327 12.392 16.8163L12.1752 17.7925L12.3919 16.8163L1.49747 14.3979L23.9518 1.82864L19.5566 27.1835L13.6561 17.7113Z" stroke-width="2"/>
+                                </svg>
+                            </span>
+                            <span class="user-nav__title">
+                                Санкт-Петербург, ул Большая Конюшенная, д 19
+                            </span>
+                        </a>
+                        <a class="user-nav__link" href="#">
+                            <span class="user-nav__icon">
+                                <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="user-nav__link" href="#">
+                            <span class="user-nav__icon">
+                                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 14.9925C14.75 14.9925 17.5 12.7854 17.5 8.62105C17.5 4.45673 15.6667 1.95813 12 1.95813C8.33333 1.95813 6.5 5.33123 6.5 8.62105C6.5 12.7854 9.25 14.9925 12 14.9925ZM12 14.9925C17.5 14.9925 23 19.3858 23 24.4455H1C1 19.948 6.5 14.9925 12 14.9925Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                            </span>
+                        </a>
+                        <a class="user-nav__link" href="#">
+                            <span class="user-nav__icon">
+                                <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1.93616H3.88425C4.33141 1.93616 4.72423 2.23303 4.84628 2.66321L9.07372 17.5635C9.19577 17.9937 9.58859 18.2906 10.0358 18.2906H24.7568C25.2075 18.2906 25.6025 17.9892 25.7214 17.5545L28.6542 6.83436C28.8283 6.19804 28.3494 5.57048 27.6897 5.57048H5.67111" stroke-width="2"/>
+                                    <path d="M15 23.9125C15 25.3568 13.8602 26.49 12.5 26.49C11.1398 26.49 10 25.3568 10 23.9125C10 22.4682 11.1398 21.335 12.5 21.335C13.8602 21.335 15 22.4682 15 23.9125Z" stroke-width="2"/>
+                                    <path d="M24 23.9125C24 25.3568 22.8602 26.49 21.5 26.49C20.1398 26.49 19 25.3568 19 23.9125C19 22.4682 20.1398 21.335 21.5 21.335C22.8602 21.335 24 22.4682 24 23.9125Z" stroke-width="2"/>
+                                </svg>
+                            </span>
+                            <span class="user-nav__notify">2</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //Header top row -->
+        </div>
+
+        <!-- Header bottom row -->
+        <nav class="header__bottom-row header-nav">
+            <div class="container">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link header-nav__link--active" href="catalog.html">Каталог запчастей</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="catalog.html">Каталог ТО</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="catalog.html">Шины</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="catalog.html">Диски</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="catalog.html">Аккумуляторы</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="catalog.html">Автомасла</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="catalog.html">Автолампы</a>
+                    </li>
+                    <li class="headerr-nav__item">
+                        <a class="header-nav__link" href="catalog.html">Аксессуары</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Header bottom row -->
+    </header>
+
+    <main class="main">
+        <section class="notice">
+            <div class="container container--mobile-wide">
+                <div class="notice__content">
+
+                    <div class="notice__carousel">
+                        <div class="carousel owl-carousel" id="main-carousel">
+                            <div class="carousel__item">
+                            
+                            </div>
+                            <div class="carousel__item">
+                            
+                            </div>
+                            <div class="carousel__item">
+                            
+                            </div>
+                            <div class="carousel__item">
+                            
+                            </div>
+                            <div class="carousel__item">
+                            
+                            </div>
+                            <div class="carousel__item">
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notice__action">
+                        <div class="action">
+                            <div class="action__header">
+                                <div class="badge">акция</div>
+                                <div class="action__price">
+                                    <div class="action__price-new">200&thinsp;&#8381;</div>
+                                    <div class="action__price-old">500&thinsp;&#8381;</div>
+                                </div>
+                            </div>
+                            <div class="action__img">
+                                <img src="./img/lightbulb.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="action__desc">Лампочка minimalistic</div>
+                            <div class="action__footer">
+                                <div class="timer">
+                                    <div class="timer__title">До конца акции осталось:</div>
+                                    <div class="timer__body">
+                                        <div class="timer__countdown">
+                                            <div class="timer__dial">
+                                                <div class="timer__number">00</div>
+                                                <div class="timer__label">часов</div>
+                                            </div>
+                                            <div class="timer__dial">
+                                                <div class="timer__number">20</div>
+                                                <div class="timer__label">минут</div>
+                                            </div>
+                                            <div class="timer__dial">
+                                                <div class="timer__number">00</div>
+                                                <div class="timer__label">секунд</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="search">
+            <div class="container">
+                <div class="tabs">
+                    <ul class="tabs__list">
+                        <li class="tabs__item">
+                            <a href="#search-vin" class="tabs__link">Поиск по Vin</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#search-brand" class="tabs__link tabs__link--active">Поиск по марке</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#search-name" class="tabs__link">Поиск по названию товара</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#search-article" class="tabs__link">Поиск по артикулу</a>
+                        </li>
+                    </ul>
+
+                    <div class="tabs__panel hidden" id="search-vin">
+                        <form action="">
+                            <div class="search__field">
+                                <div class="search-input">
+                                    <input type="search" placeholder="Введите vin код"></input>
+                                </div>
+                                <button class="search__btn" type="submit">
+                                    <span>искать</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tabs__panel" id="search-brand">
+                        <form action="">
+                            <div class="search__field">
+                                <div class="search-input">
+                                    <input type="search" placeholder="Введите марку автомобиля"></input>
+                                </div>
+                                <button class="search__btn" type="submit">
+                                    <span>искать</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tabs__panel hidden" id="search-name">
+                        <form action="">
+                            <div class="search__field">
+                                <div class="search-input">
+                                    <input type="search" placeholder="Введите название автомобиля"></input>
+                                </div>
+                                <button class="search__btn" type="submit">
+                                    <span>искать</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tabs__panel hidden" id="search-article">
+                        <form action="">
+                            <div class="search__field">
+                                <div class="search-input">
+                                    <input type="search" placeholder="Введите артикул"></input>
+                                </div>
+                                <button class="search__btn" type="submit">
+                                    <span>искать</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="container">
+                <div class="category__list">
+                    <div class="category__list-item">
+
+                        <a class="category-item" href="#">
+                            <div class="category-item__text-cell">
+                                <div class="category-item__title">Автохимия</div>
+                                <span class="category-item__link">Перейти</span>
+                            </div>
+    
+                            <div class="category-item__img-cell">
+                                <div class="catagory-item__img-circle">
+                                    <img src="./img/icon/autochemicals.svg" class="catagory-item__img" alt="Autochemicals">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="category__list-item">
+                        
+                        <a class="category-item" href="#">
+                            <div class="category-item__text-cell">
+                                <div class="category-item__title">Шины и диски</div>
+                                <span class="category-item__link">Перейти</span>
+                            </div>
+    
+                            <div class="category-item__img-cell">
+                                <div class="catagory-item__img-circle">
+                                    <img src="./img/icon/tires.svg" class="catagory-item__img" alt="Tires">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="category__list-item">
+                        
+                        <a class="category-item" href="#">
+                            <div class="category-item__text-cell">
+                                <div class="category-item__title">Инструменты</div>
+                                <span class="category-item__link">Перейти</span>
+                            </div>
+    
+                            <div class="category-item__img-cell">
+                                <div class="catagory-item__img-circle">
+                                    <img src="./img/icon/tools.svg" class="catagory-item__img" alt="Tools">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="category__list-item">
+                        
+                        <a class="category-item" href="#">
+                            <div class="category-item__text-cell">
+                                <div class="category-item__title">Запчасти на ТО</div>
+                                <span class="category-item__link">Перейти</span>
+                            </div>
+    
+                            <div class="category-item__img-cell">
+                                <div class="catagory-item__img-circle">
+                                    <img src="./img/icon/spares.svg" class="catagory-item__img" alt="Spares">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="category__list-item">
+                        
+                        <a class="category-item" href="#">
+                            <div class="category-item__text-cell">
+                                <div class="category-item__title">Автоэлектроника</div>
+                                <span class="category-item__link">Перейти</span>
+                            </div>
+    
+                            <div class="category-item__img-cell">
+                                <div class="catagory-item__img-circle">
+                                    <img src="./img/icon/autoelectronic.svg" class="catagory-item__img" alt="Autoelectronic">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="category__list-item">
+                        
+                        <a class="category-item" href="#">
+                            <div class="category-item__text-cell">
+                                <div class="category-item__title">Аксессуары и&nbsp;другое</div>
+                                <span class="category-item__link" href="#">Перейти</span>
+                            </div>
+    
+                            <div class="category-item__img-cell">
+                                <div class="catagory-item__img-circle">
+                                    <img src="./img/icon/accessories.svg" class="catagory-item__img" alt="Accessories">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="products products--popular">
+            <div class="container">
+                <h3 class="products__title">Популярные товары</h3>
+
+                <div class="tabs">
+                    <ul class="tabs__list">
+                        <li class="tabs__item">
+                            <a href="#products-popular-spares" class="tabs__link tabs__link--active">запчасти</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-popular-autochemicals" class="tabs__link">автохимия</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-popular-tires" class="tabs__link">шины и диски</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-popular-autoelectronics" class="tabs__link">автоэлектроника</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-popular-tools" class="tabs__link">инструменты</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-popular-accessories" class="tabs__link">аксессуары и другое</a>
+                        </li>
+                    </ul>
+
+                    <div class="tabs__panel" id="products-popular-spares">
+                        <div class="products__list owl-carousel" id="products-carousel">
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/belt.jpg" alt="Belt">
+                                    </div>
+                                    <div class="product-card__desc">Ремень</div>
+                                    <div class="product-card__price">440&thinsp;&#8381;</div>
+                                    <div class="product-card__presence">
+                                        <span class="product-card__presence-icon"></span>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <div class="badge">sale</div>
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--snow"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-1.jpg" alt="Tire">
+                                    </div>
+                                    <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                                    <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                                    <div class="product-card__presence">
+                                        <span class="product-card__presence-icon"></span>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/headlamp.jpg" alt="Lightbulb">
+                                    </div>
+                                    <div class="product-card__desc">Фара Nokian 2025</div>
+                                    <div class="product-card__price">680&thinsp;&#8381;</div>
+                                    <div class="product-card__presence">
+                                        <span class="product-card__presence-icon"></span>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <div class="badge">sale</div>
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--sun"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Tire">
+                                    </div>
+                                    <div class="product-card__desc">Шина 245/60 R18 105T Contyther Crosh Conta...</div>
+                                    <div class="product-card__presence">
+                                        <div class="product-card__presence-text">нет в наличии</div>
+                                        <a class="product-card__presence-link">Сообщить о поступлении</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="products__link-more"><a href="#">смотреть еще</a></div>
+                    </div>
+                    <div class="tabs__panel hidden" id="products-popular-autochemicals">
+                    </div>
+                    <div class="tabs__panel hidden" id="products-popular-tires">
+                    </div>
+                    <div class="tabs__panel hidden" id="products-popular-autoelectronics">
+                    </div>
+                    <div class="tabs__panel hidden" id="products-popular-tools">
+                    </div>
+                    <div class="tabs__panel hidden" id="products-popular-accessories">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container container--mobile-wide">
+                <a class="cta__banner cta__banner--bg-img"></a>
+            </div>
+        </section>
+
+        <section class="products products--suggestions">
+            <div class="container">
+                <h3 class="products__title">С этим товаром покупают</h3>
+                <div class="tabs">
+                    <ul class="tabs__list">
+                        <li class="tabs__item">
+                            <a href="#products-sug-spares" class="tabs__link">запчасти</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-sug-autochemicals" class="tabs__link">автохимия</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-sug-tires" class="tabs__link tabs__link--active">шины и диски</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-sug-autoelectronics" class="tabs__link">автоэлектроника</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-sug-tools" class="tabs__link">инструменты</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#products-sug-accessorise" class="tabs__link">аксессуары и другое</a>
+                        </li>
+                    </ul>
+
+                    <div class="tabs__panel hidden" id="products-sug-spares"></div>
+                    <div class="tabs__panel hidden" id="products-sug-autochemicals"></div>
+                    <div class="tabs__panel" id="products-sug-tires">
+                        <div class="products__list owl-carousel">
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--sun"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Belt">
+                                    </div>
+                                    <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                                    <div class="product-card__presence">
+                                        <div class="product-card__presence-text">нет в наличии</div>
+                                        <a class="product-card__presence-link">Сообщить о поступлении</a>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <div class="badge">sale</div>
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--snow"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Tire">
+                                    </div>
+                                    <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                                    <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                                    <div class="product-card__presence">
+                                        <span class="product-card__presence-icon"></span>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--sun"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Lightbulb">
+                                    </div>
+                                    <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                                    <div class="product-card__presence">
+                                        <div class="product-card__presence-text">нет в наличии</div>
+                                        <a class="product-card__presence-link">Сообщить о поступлении</a>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <div class="badge">sale</div>
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--sun"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Tire">
+                                    </div>
+                                    <div class="product-card__desc">Шина 245/60 R18 105T Contyther Crosh Conta...</div>
+                                    <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                                    <div class="product-card__presence">
+                                        <span class="product-card__presence-icon"></span>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="products__link-more"><a href="#">смотреть еще</a></div>
+                    </div>
+                    <div class="tabs__panel hidden" id="products-sug-autoelectronics"></div>
+                    <div class="tabs__panel hidden" id="products-sug-tools"></div>
+                    <div class="tabs__panel hidden" id="products-sug-accessorise"></div>
+                </div>   
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container container--mobile-wide">
+            <div class="footer__row">
+
+                <div class="footer__form">
+                    <h4 class="footer__form-title">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</h4>
+                    <form>
+                        <div class="footer__form-field">
+                            <div class="footer__form-input">
+                                <input type="email" autocomplete="on" placeholder="Введите ваш e-mail:" required></input>
+                            </div>
+                            <button class="footer__form-btn" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="footer__menu">
+                    <div class="footer__menu-col">
+                        <div class="footer__menu-title">Информация</div>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">О компании</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Контакты</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Реквизиты</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Магазины</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <div class="footer__menu-title">Сервисный центр</div>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Доставка и самовывоз</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Оплата</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Возврат-обмен</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <div class="footer__menu-title">Интернет-магазин</div>
+                        <ul class="footer-menu footer-menu--two-col">
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Доставка и самовывоз</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Оплата</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Возврат-обмен</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Новости</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Акции</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Договор оферты</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Политика обработки персональных данных</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Интернет-магазин автозапчастей</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 403px;
+    padding: 20px 20px 25px;
+    margin-bottom: 15px;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    text-decoration: none;
+
+    &:hover{
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+        cursor: pointer;
+
+        .product-card__desc,
+        .product-card__price{
+            color: #FF7931;
+        }
+
+        .product-card__overlay{
+            display: block;
+        }
+    }
+}
+
+.product-card__overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.product-card__overlay-btn{
+    display: none;
+
+    @media (min-width: 1200px){
+        display: block;
+        position: absolute;
+        top: 122px;
+        left: 20px;
+        right: 20px;
+        padding: 18px 20px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1;
+        color: #5F6063;
+        text-decoration: none;
+        text-align: center;
+    
+        &:hover{
+            background: rgb(255, 255, 255);
+        }
+    }
+}
+
+.product-card__attributes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.product-card__icon-btn {
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+
+    svg{
+        stroke:#A8A8A8;
+    }
+
+    &:hover{
+        svg{
+            stroke:rgba(168, 168, 168, 0.5);
+        }
+    }
+}
+
+.product-card__icon{
+    width: 31px;
+    height: 31px;
+    margin-left: 17px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-card__icon--snow{
+    background-image: url("../img/icon/snowflake_icon.svg");
+}
+
+.product-card__icon--sun{
+    background-image: url("../img/icon/sun_icon.svg");
+}
+
+.products__list.owl-carousel .product-card__img,
+.product-card__img {
+    // height: 215px;
+    max-height: 215px;
+
+    // flex-grow: 1;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img{
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+    }
+}
+
+.product-card__desc {
+    max-height: 68px;
+    min-height: 44px;
+    padding-top: 20px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #48494D;
+    // flex: auto;
+    
+    // column-width: 228px;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+
+    @media (min-width: 768px){
+        column-width: 228px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.product-card__price {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    color: #48494D;
+}
+
+.product-card__presence {
+    text-align: center;
+}
+
+.product-card__presence-text {
+    margin-bottom: 15px;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #48494D;
+}
+
+.product-card__presence-link{
+    position: relative;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
+    line-height: 1.1875;
+    color: #FF7931;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        left: 0;
+        bottom: -4px;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(255, 121, 49, 0.2);
+    }
+
+    &:hover::after{
+        background-color: rgba(255, 121, 49, 0.5);
+    }
+}
+
+.product-card__presence-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF7931;
+    border-radius: 10px 0px 0px 0px;
+
+    &::before{
+        content: "";
+        width: 20px;
+        height: 24px;
+        background-image: url("../img/icon/package_icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}

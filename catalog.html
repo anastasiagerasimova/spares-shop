@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spares shop - catalog</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font/ProximaNova/stylesheet.css">
+    <link rel="stylesheet" href="./libs/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.green.min.css">
+</head>
+<body class="catalog-body">
+    <header class="header">
+        <div class="container">
+             <!-- Header top row -->
+            <div class="header__top-row">
+
+                <!--Navigation button for mabile-->
+                <div id="menu-toggle" class="menu-icon">
+                    <div class="menu-icon-line"></div>
+                </div>
+                <!--//Navigation button for mobile -->
+                        
+                <!--Navigation for mobile-->
+                <div id="mobile-menu" class="mobile-menu">
+                    <div class="mobile-menu__inner">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link mobile-menu__link--login">Войти</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link mobile-menu__link--login">Регистрация</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link mobile-menu__link--favorites">Избранное</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link mobile-menu__link--shop">Магазины</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link mobile-menu__link--actions">Акции</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link  mobile-menu__link--delivery">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Каталог запчастей</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Каталог ТО</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Шины</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Диски</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Аккумуляторы</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Автомасла</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Автолампы</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="mobile-menu__link">Аксессуары</a>
+                            </li>
+                        </ul>
+                        <div class="mobile-menu__address">Санкт-Петербург, ул Большая Конюшенная, д 19</div>
+                    </div>
+                </div>
+                <!--//Navigation for mobile -->
+
+                <div class="header__menu">
+                    <ul class="header-menu">
+                        <li class="header-menu__item">
+                            <a class="header-menu__link" href="#">Магазины</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a class="header-menu__link" href="#">Акции</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a class="header-menu__link" href="#">Доставка и оплата</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="./img/logo.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="header__user-nav">
+                    <div class="user-nav">
+                        <a class="user-nav__link user-nav__link--address" href="#">
+                            <span class="user-nav__icon">
+                                <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.6561 17.7113L12.8073 18.24L13.6561 17.7113C13.372 17.2552 12.9164 16.9327 12.392 16.8163L12.1752 17.7925L12.3919 16.8163L1.49747 14.3979L23.9518 1.82864L19.5566 27.1835L13.6561 17.7113Z" stroke-width="2"/>
+                                </svg>
+                            </span>
+                            <span class="user-nav__title">
+                                Санкт-Петербург, ул Большая Конюшенная, д 19
+                            </span>
+                        </a>
+                        <a class="user-nav__link" href="#">
+                            <span class="user-nav__icon">
+                                <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="user-nav__link" href="#">
+                            <span class="user-nav__icon">
+                                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 14.9925C14.75 14.9925 17.5 12.7854 17.5 8.62105C17.5 4.45673 15.6667 1.95813 12 1.95813C8.33333 1.95813 6.5 5.33123 6.5 8.62105C6.5 12.7854 9.25 14.9925 12 14.9925ZM12 14.9925C17.5 14.9925 23 19.3858 23 24.4455H1C1 19.948 6.5 14.9925 12 14.9925Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                            </span>
+                        </a>
+                        <a class="user-nav__link" href="#">
+                            <span class="user-nav__icon">
+                                <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1.93616H3.88425C4.33141 1.93616 4.72423 2.23303 4.84628 2.66321L9.07372 17.5635C9.19577 17.9937 9.58859 18.2906 10.0358 18.2906H24.7568C25.2075 18.2906 25.6025 17.9892 25.7214 17.5545L28.6542 6.83436C28.8283 6.19804 28.3494 5.57048 27.6897 5.57048H5.67111" stroke-width="2"/>
+                                    <path d="M15 23.9125C15 25.3568 13.8602 26.49 12.5 26.49C11.1398 26.49 10 25.3568 10 23.9125C10 22.4682 11.1398 21.335 12.5 21.335C13.8602 21.335 15 22.4682 15 23.9125Z" stroke-width="2"/>
+                                    <path d="M24 23.9125C24 25.3568 22.8602 26.49 21.5 26.49C20.1398 26.49 19 25.3568 19 23.9125C19 22.4682 20.1398 21.335 21.5 21.335C22.8602 21.335 24 22.4682 24 23.9125Z" stroke-width="2"/>
+                                </svg>
+                            </span>
+                            <span class="user-nav__notify">2</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //Header top row -->
+        </div>
+
+        <!-- Header bottom row -->
+        <nav class="header__bottom-row header-nav">
+            <div class="container">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Каталог запчастей</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Каталог ТО</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link header-nav__link--active" href="#">Шины</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Диски</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Аккумуляторы</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Автомасла</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Автолампы</a>
+                    </li>
+                    <li class="headerr-nav__item">
+                        <a class="header-nav__link" href="#">Аксессуары</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Header bottom row -->
+    </header>
+
+    <main class="main">
+        <div class="breadcrumbs-wrapper">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item"> 
+                        <a href="#">Шины</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Шины зимние</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="filter-top">
+            <div class="container container--mobile-wide">
+                <h1 class="filter-top__heading">Нешипованные шины</h1>
+                <div class="filter-top__row">
+                    <div class="filter-top__offers">
+                        <ul>
+                            <li class="filter-top__offers-item">
+                                <a class="filter-top__offers-link" href="#">Полноприводные</a>
+                            </li>
+                            <li class="filter-top__offers-item"> 
+                                <a class="filter-top__offers-link" href="#">от 5000</a>
+                            </li>
+                            <li class="filter-top__offers-item">
+                                <a class="filter-top__offers-link" href="#">Nokian</a>
+                            </li>
+                            <li class="filter-top__offers-item">
+                                <a class="filter-top__offers-link" href="#">от 5000</a>
+                            </li>
+                            <li class="filter-top__offers-item">
+                                <a class="filter-top__offers-link" href="#">еще</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-top__sort">
+                        <div class="filter-top__sort-type">
+                            <div class="filter-top__select-sort-wrapper">
+                                <div data-select class="select-sort">
+                                    <div data-select-title class="select-sort__title">По полулярности</div>
+                                    <div data-select-dropdown class="select-sort__dropdown hidden">
+                                        <ul>
+                                            <li data-select-item="По полулярности" class="select-sort__item">По полулярности</li>
+                                            <li data-select-item="по цене" class="select-sort__item">по цене</li>
+                                            <li data-select-item="По новизне" class="select-sort__item">По новизне</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="filter-top__sort-btn">По полулярности</button>
+                        </div>
+                        <div class="filter-top__sort-view">
+                            <button class="filter-top__sort-tile">
+                                <span>
+                                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="21" height="19" stroke-width="2"/>
+                                        <rect x="6" y="5" width="4" height="4"/>
+                                        <rect x="6" y="12" width="4" height="4"/>
+                                        <rect x="13" y="5" width="4" height="4"/>
+                                        <rect x="13" y="12" width="4" height="4"/>
+                                    </svg>  
+                                </span>
+                            </button>
+                            <button class="filter-top__sort-list">
+                                <span>
+                                    <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                        <rect x="6" width="19" height="3" rx="1.5"/>
+                                        <rect x="6" y="8" width="19" height="3" rx="1.5"/>
+                                        <rect x="6" y="16" width="19" height="3" rx="1.5"/>
+                                        <rect width="3" height="3" rx="1.5"/>
+                                        <rect y="8" width="3" height="3" rx="1.5"/>
+                                        <rect y="16" width="3" height="3" rx="1.5"/>
+                                        </g>
+                                        </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="filter-top__filter-trigger">
+                            <button class="filter-top__filter-trigger-btn">Фильтры</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="catalog-wrapper">
+            <section class="filter-left">
+                <form method="GET" action="">
+                    <div class="filter-left__parameters">
+                        <div class="filter-left__type">
+                            <button class="filter-left__type-btn filter-left__type-btn--active">Параметры</button>
+                            <button class="filter-left__type-btn">по марке</button>
+                        </div>
+
+                        <div class="filter-left__field">
+                            <div class="filter-left__dropdown-toggle filter-left__title">Сезонность</div>
+                            <div class="filter-left__dropdown">
+                                <ul>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox" name="winter" type="checkbox" id="checkbox-winter">
+                                        <label for="checkbox-winter">Зимние</label>
+                                        <button class="filter-left__question"></button>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox" name="summer" type="checkbox" id="checkbox-summer">
+                                        <label for="checkbox-summer">Летние</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__dropdown-toggle filter-left__title">Тип шин</div>
+                            <div class="filter-left__dropdown">
+                                <ul>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox" name="all" type="checkbox" id="checkbox-all" checked>
+                                        <label for="checkbox-all">Все</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox" name="studded" type="checkbox" id="checkbox-studded">
+                                        <label for="checkbox-studded">Шипованные</label>
+                                        <button class="filter-left__question"></button>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox" name="studless" type="checkbox" id="checkbox-studless">
+                                        <label for="checkbox-studless">Нешипованные</label>
+                                        <button class="filter-left__question"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__dropdown-toggle filter-left__title">Цена</div>
+                            <div class="filter-left__dropdown">
+                                <!-- <div class="filter-left__slider">
+                                    <div class="filter-left__toggle filter-left__toggle-min"></div>
+                                    <div class="filter-left__scale">
+                                        <div class="filter-left__range"></div>
+                                    </div>
+                                    <div class="filter-left__toggle filter-left__toggle-max"></div>
+                                </div>
+                                <div class="filter-left__price">
+                                    <div class="filter-left__price-group">
+                                        <label for="price-min">от</label>
+                                        <input type="text" id="price-min">
+                                    </div>
+                                    <div class="filter-left__price-group">
+                                        <label for="price-max">до</label>
+                                        <input type="text" id="price-max">
+                                    </div>
+                                </div> -->
+        
+                                <div class="filter-left__slider" id="slider"></div>
+        
+                                <div class="filter-left__price">
+                                    <div class="filter-left__price-group">
+                                        <label for="price-min">от</label>
+                                        <input type="text" id="price-min" value="2000">
+                                    </div>
+                                    <div class="filter-left__price-group">
+                                        <label for="price-max">до</label>
+                                        <input type="text" id="price-max" value="12000">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__select-wrapper">
+                                <div class="filter-left__title">Диаметр</div>
+                                <button class="filter-left__question"></button>
+                                <div data-select class="filter-left__select">
+                                    <div data-select-title class="filter-left__select-btn">16</div>
+                                    <!-- <input type="text"> -->
+                                    <ul data-select-dropdown class="filter-left__select-dropdown hidden">
+                                        <li data-select-item="10">10</li>
+                                        <li data-select-item="12">12</li>
+                                        <li data-select-item="12C">12C</li>
+                                        <li data-select-item="14">14</li>
+                                        <li data-select-item="14C">14C</li>
+                                        <li data-select-item="15">15</li>
+                                        <li data-select-item="15C">15C</li>
+                                        <li data-select-item="16">16</li>
+                                        <li data-select-item="16C">16C</li>
+                                        <li data-select-item="17">17</li>
+                                        <li data-select-item="17C">17C</li>
+                                        <li data-select-item="18">18</li>
+                                        <li data-select-item="18C">18C</li>
+                                        <li data-select-item="19">19</li>
+                                        <li data-select-item="20">20</li>
+                                        <li data-select-item="21">21</li>
+                                        <li data-select-item="22">22</li>
+                                        <li data-select-item="23">23</li>
+                                        <li data-select-item="24">24</li>
+                                        <li data-select-item="25">25</li>
+                                        <li data-select-item="8">8</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__select-wrapper">
+                                <div class="filter-left__title">Профиль</div>
+                                <button class="filter-left__question"></button>
+                                <div data-select class="filter-left__select">
+                                    <div data-select-title class="filter-left__select-btn">16</div>
+                                    <!-- <input type="text"> -->
+                                    <ul data-select-dropdown class="filter-left__select-dropdown hidden">
+                                        <li data-select-item="10">10</li>
+                                        <li data-select-item="12">12</li>
+                                        <li data-select-item="14">14</li>
+                                        <li data-select-item="16">16</li>
+                                        <li data-select-item="17">17</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__select-wrapper">
+                                <div class="filter-left__title">Ширина</div>
+                                <button class="filter-left__question"></button>
+                                <div data-select class="filter-left__select">
+                                    <div data-select-title class="filter-left__select-btn">16</div>
+                                    <!-- <input type="text"> -->
+                                    <ul data-select-dropdown class="filter-left__select-dropdown hidden">
+                                        <li data-select-item="10">10</li>
+                                        <li data-select-item="12">12</li>
+                                        <li data-select-item="14">14</li>
+                                        <li data-select-item="16">16</li>
+                                        <li data-select-item="17">17</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__dropdown-toggle filter-left__title filter-left__title--small-padding">Бренд</div>
+                            <div class="filter-left__dropdown">
+                                <div class="filter-left__search">
+                                    <input class="filter-left__input-search" name="" type="text" placeholder="Введите бренд шины"  id="">
+                                </div>
+                                <ul>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="bgudrich" type="checkbox" id="checkbox-bgudrich" checked>
+                                        <label for="checkbox-bgudrich">B Gudrich</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="wridrestone" type="checkbox" id="checkbox-wridrestone" checked>
+                                        <label for="checkbox-wridrestone">Wridrestone</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="rarym" type="checkbox" id="checkbox-rarym">
+                                        <label for="checkbox-rarym">Rarym</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="bfhides" type="checkbox" id="checkbox-bfhide">
+                                        <label for="checkbox-bfhide">BF hide</label>
+                                    </li>
+                                </ul>
+                                <button class="filter-left__show-more">Показать еще</button>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__dropdown-toggle filter-left__title filter-left__title--small-padding">Модель</div>
+                            <div class="filter-left__dropdown">
+                                <div class="filter-left__search">
+                                    <input class="filter-left__input-search" name="" type="text" placeholder="Введите бренд шины"  id="">
+                                </div>
+                                <ul>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="alina" type="checkbox" id="checkbox-alina" checked>
+                                        <label for="checkbox-alina">ALINA</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="bliwwas" type="checkbox" id="checkbox-bliwwas" checked>
+                                        <label for="checkbox-bliwwas">BLIWWAS</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="forcemoode" type="checkbox" id="checkbox-forcemoode">
+                                        <label for="checkbox-forcemoode">FORCE Moode</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="icegide" type="checkbox" id="checkbox-icegide">
+                                        <label for="checkbox-icegide">ICE Gide</label>
+                                    </li>
+                                </ul>
+                                <button class="filter-left__show-more">Показать еще</button>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__title-wrapper">
+                                <div class="filter-left__title filter-left__title--small-padding">Технология</div>
+                                <button class="filter-left__question"></button>
+                            </div>
+                            <div class="filter-left__dropdown">
+                                <ul>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="yes" type="checkbox" id="checkbox-yes">
+                                        <label for="checkbox-yes">Да</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="no" type="checkbox" id="checkbox-no">
+                                        <label for="checkbox-no">Нет</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__title filter-left__title--small-padding">Акции</div>
+                            <div class="filter-left__dropdown">
+                                <ul>
+                                    <li class="filter-left__option filter-left__option--action">
+                                        <input class="filter-left__checkbox hidden" name="sale" type="checkbox" id="checkbox-sale" checked>
+                                        <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                        <label for="checkbox-sale">SALE</label>
+                                    </li>
+                                    <li class="filter-left__option filter-left__option--action">
+                                        <input class="filter-left__checkbox hidden" name="new" type="checkbox" id="checkbox-new">
+                                        <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                        <label for="checkbox-new">NEW</label>
+                                    </li>
+                                    <li class="filter-left__option filter-left__option--action">
+                                        <input class="filter-left__checkbox hidden" name="hit" type="checkbox" id="checkbox-hit">
+                                        <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                        <label for="checkbox-hit">HIT</label>
+                                    </li>
+                                    <li class="filter-left__option filter-left__option--action">
+                                        <input class="filter-left__checkbox hidden" name="present" type="checkbox" id="checkbox-present" checked>
+                                        <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                        <label for="checkbox-present">ПОДАРОК</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__field">
+                            <div class="filter-left__dropdown-toggle filter-left__title">Страны</div>
+                            <div class="filter-left__dropdown">
+                                <ul>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="russia" type="checkbox" id="checkbox-russia">
+                                        <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                        <label for="checkbox-russia">Россия</label>
+                                    </li>
+                                    <li class="filter-left__option">
+                                        <input class="filter-left__checkbox filter-left__checkbox--check" name="germany" type="checkbox" id="checkbox-germany">
+                                        <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                        <label for="checkbox-germany">Германия</label>
+                                    </li>
+                                </ul>
+                                <button class="filter-left__show-more">Показать еще</button>
+                            </div>
+                        </div>
+        
+                        <div class="filter-left__button">
+                            <button type="submit" class="filter-left__show">подобрать</button>
+                            <button class="filter-left__extra">Дополнительные параметры</button>
+                            <button type="reset" class="filter-left__reset">Сбросить фильтр</button>
+                        </div>
+                    </div>
+                    <div class="filter-left__mark filter-form">
+                        <div class="filter-form__heading">
+                            <button class="filter-form__back-btn">
+                                <img src="./img/icon/arrow-back-mobile_icon.svg" alt="">
+                            </button>
+                            <h2>Фильтры</h2>
+                        </div>
+                        <div class="filter-form__type">
+                            <button class="filter-form__type-btn">Параметры</button>
+                            <button class="filter-form__type-btn filter-form__type-btn--active">по марке</button>
+                        </div>
+                        <div class="filter-form__field filter-form__field--season">
+                            <div class="filter-form__title">Сезонность</div>
+                            <ul class="filter-form__list">
+                                <li class="filter-left__option">
+                                    <button class="filter-left__question"></button>
+                                    <input class="filter-left__checkbox" name="winter" type="checkbox" id="checkbox-winter">
+                                    <label for="checkbox-winter">Зимние</label>
+                                </li>
+                                <li class="filter-left__option">
+                                    <button class="filter-left__question"></button>
+                                    <input class="filter-left__checkbox" name="summer" type="checkbox" id="checkbox-summer" checked>
+                                    <label for="checkbox-summer">Летние</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-form__field">
+                            <div class="filter-form__title">Марка</div>
+                            <div data-select class="select-sort">
+                                <div data-select-title class="select-sort__title">BMW</div>
+                                <div data-select-dropdown class="select-sort__dropdown hidden">
+                                    <ul>
+                                        <li data-select-item="BMW" class="select-sort__item">BMW</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-form__field">
+                            <div class="filter-form__title">Модель</div>
+                            <div data-select class="select-sort">
+                                <div data-select-title class="select-sort__title">1-series</div>
+                                <div data-select-dropdown class="select-sort__dropdown hidden">
+                                    <ul>
+                                        <li data-select-item="1-series" class="select-sort__item">1-series</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-form__field">
+                            <div class="filter-form__title">Кузов</div>
+                            <div data-select class="select-sort">
+                                <div data-select-title class="select-sort__title">E81 3d</div>
+                                <div data-select-dropdown class="select-sort__dropdown hidden">
+                                    <ul>
+                                        <li data-select-item="E81 3d" class="select-sort__item">E81 3d</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-form__field">
+                            <div class="filter-form__title">Модификация</div>
+                            <div data-select class="select-sort">
+                                <div data-select-title class="select-sort__title">116 d</div>
+                                <div data-select-dropdown class="select-sort__dropdown hidden">
+                                    <ul>
+                                        <li data-select-item="116 d" class="select-sort__item">116 d</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-form__field">
+                            <div class="filter-form__title">R16</div>
+                            <ul class="filter-form__list">
+                                <li class="filter-left__option filter-left__option--size">
+                                    <input class="filter-left__checkbox hidden" name="205/55R17" type="checkbox" id="checkbox-205/55R17">
+                                    <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                    <label for="checkbox-205/55R17">205/55 R17</label>
+                                </li>
+                                <li class="filter-left__option filter-left__option--size">
+                                    <input class="filter-left__checkbox hidden" name="205/55R17" type="checkbox" id="checkbox-205/55R17">
+                                    <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                    <label for="checkbox-205/55R17">205/55 R17</label>
+                                </li>
+                                <li class="filter-left__option filter-left__option--size">
+                                    <input class="filter-left__checkbox hidden" name="205/55R17" type="checkbox" id="checkbox-205/55R17">
+                                    <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                    <label for="checkbox-205/55R17">205/55 R17</label>
+                                </li>
+                                <li class="filter-left__option filter-left__option--size">
+                                    <input class="filter-left__checkbox hidden" name="205/55R17" type="checkbox" id="checkbox-205/55R17">
+                                    <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                    <label for="checkbox-205/55R17">205/55 R17</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-form__field">
+                            <div class="filter-form__title">R17</div>
+                            <div class="filter-form__col-wrapper">
+                                <div class="filter-form__col">
+                                    <div class="filter-form__col-title">Передняя ось</div>
+                                    <ul class="filter-form__list">
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="215/45R17" type="checkbox" id="checkbox-215/45R17">
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-215/45R17">215/45 R17</label>
+                                        </li>
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="215/50R17" type="checkbox" id="checkbox-215/50R17">
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-215/50R17">215/50 R17</label>
+                                        </li>
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="205/50R17" type="checkbox" id="checkbox-205/50R17">
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-205/50R17">205/50 R17</label>
+                                        </li>
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="195/55R17" type="checkbox" id="checkbox-195/55R17">
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-195/55R17">195/55 R17</label>
+                                        </li>
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="225/55R17" type="checkbox" id="checkbox-225/55R17">
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-225/55R17">225/55R17</label>
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="filter-form__col">
+                                    <div class="filter-form__col-title">Задняя ось</div>
+                                    <ul class="filter-form__list">
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="225/45R17" type="checkbox" id="checkbox-225/45R17">
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-225/45R17">225/45 R17</label>
+                                        </li>
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="225/50R17" type="checkbox" id="checkbox-225/50R17" checked>
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-225/50R17">225/50 R17</label>
+                                        </li>
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="245/50R17" type="checkbox" id="checkbox-245/50R17">
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-245/50R17">245/50 R17</label>
+                                        </li>
+                                        <li class="filter-left__option filter-left__option--size">
+                                            <input class="filter-left__checkbox hidden" name="205/55R17" type="checkbox" id="checkbox-205/55R17">
+                                            <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                            <label for="checkbox-205/55R17">205/55 R17</label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="filter-form__field">
+                            <div class="filter-form__title">R18</div>
+                            <ul class="filter-form__list">
+                                <li class="filter-left__option filter-left__option--size">
+                                    <input class="filter-left__checkbox hidden" name="255/40R18" type="checkbox" id="checkbox-255/40R18">
+                                    <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                    <label for="checkbox-255/40R18">255/40 R18</label>
+                                </li>
+                                <li class="filter-left__option filter-left__option--size">
+                                    <input class="filter-left__checkbox hidden" name="245/45R18" type="checkbox" id="checkbox-245/45R18">
+                                    <!-- <span class="filter-left__checkbox-custom"></span> -->
+                                    <label for="checkbox-245/45R18">245/45 R18</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="catalog">
+                <div class="catalog__product-list">
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <div class="badge">sale</div>
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                            <div class="product-card__presence">
+                                <div class="product-card__presence-text">нет в наличии</div>
+                                <a class="product-card__presence-link">Сообщить о поступлении</a>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Tire">
+                            </div>
+                            <div class="product-card__desc">Шина 245/60 R18 105T Contyther Crosh Conta...</div>
+                            <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                            <div class="product-card__presence">
+                                <span class="product-card__presence-icon"></span>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <div class="badge">sale</div>
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                            <div class="product-card__presence">
+                                <div class="product-card__presence-text">нет в наличии</div>
+                                <a class="product-card__presence-link">Сообщить о поступлении</a>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <div class="badge">sale</div>
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                            <div class="product-card__presence">
+                                <div class="product-card__presence-text">нет в наличии</div>
+                                <a class="product-card__presence-link">Сообщить о поступлении</a>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Tire">
+                            </div>
+                            <div class="product-card__desc">Шина 245/60 R18 105T Contyther Crosh Conta...</div>
+                            <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                            <div class="product-card__presence">
+                                <span class="product-card__presence-icon"></span>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <div class="badge">sale</div>
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                            <div class="product-card__presence">
+                                <div class="product-card__presence-text">нет в наличии</div>
+                                <a class="product-card__presence-link">Сообщить о поступлении</a>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <div class="badge">sale</div>
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                            <div class="product-card__presence">
+                                <div class="product-card__presence-text">нет в наличии</div>
+                                <a class="product-card__presence-link">Сообщить о поступлении</a>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Tire">
+                            </div>
+                            <div class="product-card__desc">Шина 245/60 R18 105T Contyther Crosh Conta...</div>
+                            <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                            <div class="product-card__presence">
+                                <span class="product-card__presence-icon"></span>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <div class="badge">sale</div>
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                            <div class="product-card__presence">
+                                <div class="product-card__presence-text">нет в наличии</div>
+                                <a class="product-card__presence-link">Сообщить о поступлении</a>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <div class="badge">sale</div>
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                            <div class="product-card__presence">
+                                <div class="product-card__presence-text">нет в наличии</div>
+                                <a class="product-card__presence-link">Сообщить о поступлении</a>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Tire">
+                            </div>
+                            <div class="product-card__desc">Шина 245/60 R18 105T Contyther Crosh Conta...</div>
+                            <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                            <div class="product-card__presence">
+                                <span class="product-card__presence-icon"></span>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="catalog__product">
+                        <div class="product-card">
+                            <a class="product-card__overlay" href="product-page.html">
+                                <span class="product-card__overlay-btn">быстрый просмотр</span>
+                            </a>
+                            <div class="product-card__attributes">
+                                <div class="badge">sale</div>
+                                <button class="product-card__icon-btn">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                                <span class="product-card__icon product-card__icon--sun"></span>
+                            </div>
+                            <div class="product-card__img">
+                                <img src="./img/tire-2.jpg" alt="Lightbulb">
+                            </div>
+                            <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                            <div class="product-card__presence">
+                                <div class="product-card__presence-text">нет в наличии</div>
+                                <a class="product-card__presence-link">Сообщить о поступлении</a>
+                            </div>
+                        </div>  
+                    </div>
+    
+                </div>
+
+                <div class="catalog__show-more">
+                    <button class="catalog__show-btn">Показать еще</button>
+                </div>
+
+                <div class="catalog__page-navigation">
+                    <ul class="pagination">
+                        <li class="pagination__item pagination__item--current">
+                            <a href="#" class="pagination__link">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">5</a>
+                        </li>
+                        <li class="pagination__item pagination__item--points">
+                            <a href="#" class="pagination__link">..</a>
+                        </li>
+                        <!-- <li class="pagination__item">
+                            <a href="#" class="pagination__link">6</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">7</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">8</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">9</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">10</a>
+                        </li> -->
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">11</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <section class="cta">
+            <div class="container container--mobile-wide">
+                <a class="cta__banner cta__banner--high">
+                    <h2 class="cta__title">
+                        ШИНОМОНТАЖ
+                    </h2>
+                    <p class="cta__desc">Любой сложности и без очередей</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="products products--suggestions">
+            <div class="container">
+                <h3 class="products__title">С этим покупают</h3>
+                <div class="products__list owl-carousel">
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--sun"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Belt">
+                                    </div>
+                                    <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                                    <div class="product-card__presence">
+                                        <div class="product-card__presence-text">нет в наличии</div>
+                                        <a class="product-card__presence-link">Сообщить о поступлении</a>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <div class="badge">sale</div>
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--snow"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Tire">
+                                    </div>
+                                    <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                                    <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                                    <div class="product-card__presence">
+                                        <span class="product-card__presence-icon"></span>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--sun"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Lightbulb">
+                                    </div>
+                                    <div class="product-card__desc">Шина 205/80 R16 104Q Misha RF Power Grum</div>
+                                    <div class="product-card__presence">
+                                        <div class="product-card__presence-text">нет в наличии</div>
+                                        <a class="product-card__presence-link">Сообщить о поступлении</a>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="products__list-item">
+                                <div class="product-card">
+                                    <a class="product-card__overlay" href="product-page.html">
+                                        <span class="product-card__overlay-btn">быстрый просмотр</span>
+                                    </a>
+                                    <div class="product-card__attributes">
+                                        <div class="badge">sale</div>
+                                        <button class="product-card__icon-btn">
+                                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.36656 1.2063C3.47849 1.2063 0.392496 4.77288 1.10209 9.89202C1.71793 14.3349 12.3223 23.2063 13.5 23.2063C14.6777 23.2063 25.2821 14.3349 25.8979 9.89202C26.6075 4.77277 23.5215 1.2063 19.6334 1.2063C17.0414 1.2063 15.0222 2.2961 13.5 4.47569C11.9778 2.2961 9.9586 1.2063 7.36656 1.2063Z" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <span class="product-card__icon product-card__icon--sun"></span>
+                                    </div>
+                                    <div class="product-card__img">
+                                        <img src="./img/tire-2.jpg" alt="Tire">
+                                    </div>
+                                    <div class="product-card__desc">Шина 245/60 R18 105T Contyther Crosh Conta...</div>
+                                    <div class="product-card__price">11&thinsp;680&thinsp;&#8381;</div>
+                                    <div class="product-card__presence">
+                                        <span class="product-card__presence-icon"></span>
+                                    </div>
+                                </div>  
+                            </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--mobile-wide">
+            <div class="footer__row">
+
+                <div class="footer__form">
+                    <h4 class="footer__form-title">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</h4>
+                    <form>
+                        <div class="footer__form-field">
+                            <div class="footer__form-input">
+                                <input type="email" autocomplete="on" placeholder="Введите ваш e-mail:" required></input>
+                            </div>
+                            <button class="footer__form-btn" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="footer__menu">
+                    <div class="footer__menu-col">
+                        <div class="footer__menu-title">Информация</div>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">О компании</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Контакты</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Реквизиты</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Магазины</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <div class="footer__menu-title">Сервисный центр</div>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Доставка и самовывоз</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Оплата</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Возврат-обмен</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <div class="footer__menu-title">Интернет-магазин</div>
+                        <ul class="footer-menu footer-menu--two-col">
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Доставка и самовывоз</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Оплата</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Возврат-обмен</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Новости</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Акции</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Договор оферты</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-link" href="#">Политика обработки персональных данных</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Интернет-магазин автозапчастей</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./libs/nouislider/nouislider.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/tabs.js"></script>
+
+</body>
+</html>

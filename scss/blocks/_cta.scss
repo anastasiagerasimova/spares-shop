@@ -1,0 +1,54 @@
+.cta{
+    font-family: 'Proxima Nova', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cta__banner{
+    display: block;
+    background-image: linear-gradient(to left, #FD8D43 0%, #9710E9 100%);
+}
+
+.cta__banner--bg-img{
+    background-image: url("../img/cta-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 28.75%;
+
+    @media (min-width: 768px){
+        padding-top: 14.1%;
+    }
+}
+
+.cta__banner--high{
+    height: 195px;
+
+    @media (min-width: 768px){
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    @media (min-width: 1200px){
+        display: none;
+    }
+}
+
+.cta__title{
+    margin: 0;
+    padding-top: 61px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cta__desc{
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: none;
+}

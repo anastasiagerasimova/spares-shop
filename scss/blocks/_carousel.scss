@@ -1,0 +1,211 @@
+.carousel{
+    position: relative;
+
+    @media (min-width: 768px){
+        
+    }
+
+    @media (min-width: 1200px){
+        border-radius: 3px;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.carousel__item{
+    width: 100%;
+    height: auto;
+    padding-bottom: 51.25%;
+    background-color: #c4c4c4;
+    background-image: url("../img/carousel-img-1.jpg");
+    // background-image:linear-gradient(to left,#FD8D43 0%, #9710E9 100%);
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover;
+
+    @media (min-width: 768px){
+        width: 100%;
+        height: auto;
+        padding-bottom: 45.6%;
+    }
+
+    @media (min-width: 1200px){
+        height: 397px;
+        padding-bottom: 0;
+    }
+}
+
+.carousel.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url('../img/icon/arrow-prev_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    outline: none;
+
+    &:hover{
+        background-color: #d7d9df;
+        background-image: url('../img/icon/arrow-prev-black_icon.svg');
+    }
+}
+
+.products__list.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(-100%, -50%);
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-image: url('../img/icon/arrow-prev-gray_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    outline: none;
+
+    &:hover{
+        background-color: #d7d9df;
+        background-image: url('../img/icon/arrow-prev-black_icon.svg');
+    }
+}
+
+.carousel.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url('../img/icon/arrow-next_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    outline: none;
+
+    &:hover{
+        background-color: #d7d9df;
+        background-image: url('../img/icon/arrow-next-black_icon.svg');
+    }
+}
+
+.products__list.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translate(100%, -50%);
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-image: url('../img/icon/arrow-next-gray_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    outline: none;
+
+    &:hover{
+        background-color: #d7d9df;
+        background-image: url('../img/icon/arrow-next-black_icon.svg');
+    }
+}
+
+.carousel.owl-carousel .owl-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%, 0);
+
+    @media (min-width: 768px){
+        
+    }
+
+    @media (min-width: 1200px){
+        bottom: 25px;
+    }
+}
+
+.carousel.owl-carousel button.owl-dot{
+    outline: none;
+
+    &:last-child{
+        span{
+            margin-right:0;
+        }
+    }
+}
+
+.carousel .owl-dots .owl-dot span{
+    width: 7px;
+    height: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    display:block;
+    cursor: pointer;
+
+    @media (min-width: 768px){
+        
+    }
+
+    @media (min-width: 1200px){
+        width: 11px;
+        height: 11px;
+        margin-right: 9px;
+    }
+}
+
+.carousel .owl-dots .owl-dot.active span{ 
+    background-color: rgb(255, 255, 255);
+}
+
+.products__list.owl-carousel .owl-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+}
+
+.products__list.owl-carousel button.owl-dot{
+    outline: none;
+
+    &:last-child{
+        span{
+            margin-right:0;
+        }
+    }
+}
+
+.products__list .owl-dots .owl-dot span{
+    width: 14px;
+    height: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 22px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display:block;
+    cursor: pointer;
+}
+
+.products__list .owl-dots .owl-dot.active span{ 
+    background: #FF7931;
+}

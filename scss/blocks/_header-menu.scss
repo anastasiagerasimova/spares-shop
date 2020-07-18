@@ -1,0 +1,40 @@
+.header__menu {
+    display: none;
+    margin-right: auto;
+
+    @media (min-width: 1200px){
+        display: block;
+        margin-right: auto;
+    }
+}
+
+.header-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-menu__item {
+    margin-right: 40px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.header-menu__link {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: #48494D;
+
+    text-decoration: none;
+
+    &:hover{
+        color: rgba(72, 73, 77, 0.6);
+    }
+}

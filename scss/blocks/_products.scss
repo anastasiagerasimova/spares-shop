@@ -1,0 +1,141 @@
+.products{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.catalog-body .products{
+    @media (min-width: 1200px){
+        display: none;
+    }
+}
+
+.products__title{
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+    color: #48494D;
+    text-align: center;
+
+    @media (min-width: 768px){
+        text-align: left;
+    }
+}
+
+.products .tabs{
+}
+
+.products .tabs__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    overflow-x: auto;
+}
+
+.products .tabs__item {
+    flex: none;
+    margin-right: 37px;
+}
+
+.products .tabs__link {
+    display: block;
+    padding: 11px 0;
+
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #48494D;
+    text-decoration: none;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:hover{
+        color: rgba(72, 73, 77, 0.5);
+    }
+}
+
+.products .tabs__link--active {
+    border-bottom: 2px solid #FF7931;
+    font-weight: 700;
+    color: #48494D;
+
+    &:hover{
+        color:  #48494D;
+    }
+}
+
+.products__list {
+    position: relative;
+    display: flex;
+    margin-bottom: 25px;
+
+    @media (min-width: 768px){
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 1200px){
+        margin-bottom: 15px;
+    }
+}
+
+.products--suggestions .products__list{
+    @media (min-width: 768px){
+        margin-bottom: 0px;
+    }
+
+    @media (min-width: 1200px){
+        margin-bottom: 0px;
+    }
+}
+
+.products__list-item {
+    position: relative;
+}
+
+.products__link-more{
+    padding-top: 40px;
+    text-align: center;
+
+    @media (min-width: 768px){
+        padding-top: 40px;
+    }
+
+    @media (min-width: 1200px){
+        padding-top: 0px;
+    }
+}
+
+.products--suggestions .products__link-more{
+    display: block;
+    @media (min-width: 768px){
+        display: none;
+    }
+}
+
+.products__link-more a{
+    width: 252px;
+    display: inline-block;
+    padding: 16px 57px;
+    background: #F0F0F4;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+
+    color: #BDBEC2;
+    text-decoration: none;
+
+    &:hover{
+        color: rgba(0, 0, 0, 0.6);
+    }
+}
